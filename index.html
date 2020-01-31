@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Idle Warrior</title>
+</head>
+
+<body class="bg-dark text-light">
+  <div class="container-fluid">
+
+    <!-- Start Status Bar -->
+
+    <div class="row" id="status-bar">
+      <div class="col-12 text-center pb-5">
+        <h1>Welcome to Idle Warrior!</h1>
+        <p>An indestructible Green Blob has invaded your homeland. You must gain honor by attacking and attempting to
+          defeat it!</p>
+      </div>
+      <div class="col-12 text-left fixed-top">
+        <h3 class="">Current Honor: <h3 class="" id="honor-status"> </h3>
+        </h3>
+      </div>
+    </div>
+
+    <!-- End Status Bar -->
+    <!-- Start Main Game Area -->
+
+    <div class="row" id="main-game-row">
+
+
+      <div class="col-6 text-center">
+        <img class="" id="green-blob" onclick="fight()" src="https://i.imgur.com/VwPGpaX.png" alt="Green Blob">
+
+
+      </div>
+
+      <!-- Upgrade Column -->
+
+      <div class="col-6 text-center">
+        <h2 class="py-2">Purchase Upgrades</h2>
+        <button onclick="upgradeSword()"> Upgrade Sword Price: <span id="sword-price"></span> </button>
+        <button onclick="upgradeEnchant()"> Strengthen Enchantment Price: <span id="enchant-price"></span></button>
+        <h2 class="py-2">Hired Hands</h2>
+        <button onclick="upgradeButler()"> Hire Butler Price: <span id="butler-price"></span></button>
+        <button onclick="upgradeMerc()"> Hire Mercenary Price: <span id="merc-price"></span></button>
+      </div>
+
+      <!-- End Upgrade Column -->
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Current Upgrades</h2>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12">
+        <h4>Click Upgrades</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 py-5 text-center">
+        <h5>Current Sword Bonus: <span id="sword-bonus">0</span></h5>
+        <h5>Sword Upgrades Purchased: <span id="sword-upgrades">0</span></h5>
+        <h5>Current Sword Price: <span id="sword-price">10</span></h5>
+      </div>
+      <div class="col-6 py-5 text-center">
+        <h5>Current Enchant Bonus: <span id="enchant-bonus">0</span></h5>
+        <h5>Enchant Upgrades Purchased: <span id="enchant-upgrades">0</span></h5>
+        <h5>Current Enchant Price: <span id="enchant-price">500</span></h5>
+
+
+      </div>
+      <div class="row text-center">
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <h4>Auto Upgrades</h4>
+      <div class="row">
+        <div class=" col-6 py-5 text-center">
+          <h5>Current Butler Bonus: <span id="butler-bonus">0</span></h5>
+          <h5>Butler Upgrades Purchased: <span id="butler-upgrades">0</span></h5>
+          <h5>Current Butler Price: <span id="butler-price">200</span></h5>
+        </div>
+
+        <div class="col-6 py-5 text-center">
+          <h5>Current Merc Bonus: <span id="merc-bonus">0</span></h5>
+          <h5>Merc Upgrades Purchased: <span id="merc-upgrades">0</span></h5>
+          <h5>Current Merc Price: <span id="merc-price">500</span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Main Game Area -->
+
+
+
+
+  </div>
+  <!-- End Container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="app.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

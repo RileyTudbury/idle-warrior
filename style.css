@@ -1,0 +1,13 @@
+body{
+  height: 100vh;
+}
+
+
+#green-blob{
+  height: 30vh;
+  width: auto;
+}
+
+img:active{
+  padding: 10px 10px
+}
